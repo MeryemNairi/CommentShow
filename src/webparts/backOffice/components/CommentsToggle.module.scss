@@ -1,0 +1,119 @@
+.commentsWidgetContainer {
+    width: 300px;
+    max-height: 500px;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #C4F2DA;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .commentsWidgetHeader {
+    background-color: #ffc46B;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .headerTitle {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc46B;
+  }
+  
+  .headerTitle h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .headerTitle p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+  
+
+  
+  .commentsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+  }
+  
+  .commentItem {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .commentContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .commentUser {
+    font-weight: bold;
+  }
+  
+  .commentDate {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .commentText {
+    margin-top: 5px;
+  }
+  
+  .commentEvent {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #044119;
+  }
+  
+  .messageIconContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #32EB96; /* Customize the color as needed */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .messageIcon {
+    color: #fff;
+    font-size: 24px;
+  }
+  .commentsWidget {
+  background-color: #FFFAF0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.commentsListContainer {
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* To avoid scrollbar overlapping with content */
+  min-height: 150px; /* Set a minimum height as needed */
+  max-height: 400px; /* Set a maximum height as needed */
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000; /* Adjust color as needed */
+}
