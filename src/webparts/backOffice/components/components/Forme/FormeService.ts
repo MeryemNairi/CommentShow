@@ -20,7 +20,12 @@ export const submitComment = async (commentData: ICommentData) => {
 export const getComments = async (): Promise<ICommentData[]> => {
   try {
     const list = sp.web.lists.getByTitle('commentV3');
-    const items = await list.items.orderBy('Id', false).select('Id', 'comment', 'date', 'User', 'newsNews').get();
+    // Ajouter la condition de filtrage pour le statut "valid"
+    const items = await list.items
+      .filter("status eq 'valid'")
+      .orderBy('Id', false)
+      .select('Id', 'comment', 'date', 'User', 'newsNews')
+      .get();
     return items.map((item: any) => ({
       id: item.Id,
       comment: item.comment,
