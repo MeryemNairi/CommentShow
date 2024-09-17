@@ -19,7 +19,6 @@ export const Forme: React.FC<IFormProps> = ({ context }) => {
       console.error('Error fetching comments:', error);
     }
   };
-
   return (
     <div className={styles.container}>
       <h2 className={styles.recordsTitle}>Comments</h2>
